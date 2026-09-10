@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect width="920" height="420" fill="#0b1220"/>
+  <text x="460" y="36" text-anchor="middle" fill="#e2e8f0" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="700">RAG Eval Lab — Hybrid Retrieval + Offline Eval Harness</text>
+  <g filter="url(#shadow)" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="40" y="80" width="140" height="70" rx="10" fill="url(#g1)"/>
+    <text x="110" y="112" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Corpus</text>
+    <text x="110" y="132" text-anchor="middle" fill="#cbd5e1" font-size="11">37 DS/ML docs</text>
+    <rect x="220" y="80" width="140" height="70" rx="10" fill="url(#g1)"/>
+    <text x="290" y="112" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Chunking</text>
+    <text x="290" y="132" text-anchor="middle" fill="#cbd5e1" font-size="11">overlap windows</text>
+    <rect x="400" y="50" width="150" height="60" rx="10" fill="#134e4a"/>
+    <text x="475" y="78" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">BM25</text>
+    <text x="475" y="96" text-anchor="middle" fill="#99f6e4" font-size="11">lexical</text>
+    <rect x="400" y="125" width="150" height="60" rx="10" fill="#1e3a5f"/>
+    <text x="475" y="153" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">TF-IDF Dense</text>
+    <text x="475" y="171" text-anchor="middle" fill="#93c5fd" font-size="11">cosine / RRF</text>
+    <rect x="590" y="80" width="140" height="70" rx="10" fill="#7c2d12"/>
+    <text x="660" y="112" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">RRF Fusion</text>
+    <text x="660" y="132" text-anchor="middle" fill="#fed7aa" font-size="11">top-k chunks</text>
+    <rect x="760" y="80" width="120" height="70" rx="10" fill="#4c1d95"/>
+    <text x="820" y="112" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Extractive</text>
+    <text x="820" y="132" text-anchor="middle" fill="#ddd6fe" font-size="11">QA answer</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2" fill="none">
+    <path d="M180 115 H220"/>
+    <path d="M360 115 H400"/>
+    <path d="M550 80 H590"/>
+    <path d="M550 155 H590"/>
+    <path d="M730 115 H760"/>
+  </g>
+  <g fill="#64748b">
+    <polygon points="216,115 206,110 206,120"/>
+    <polygon points="396,115 386,110 386,120"/>
+    <polygon points="586,80 576,75 576,85"/>
+    <polygon points="586,155 576,150 576,160"/>
+    <polygon points="756,115 746,110 746,120"/>
+  </g>
+  <rect x="120" y="250" width="680" height="130" rx="14" fill="#111827" stroke="#334155" stroke-width="2"/>
+  <text x="460" y="280" text-anchor="middle" fill="#f8fafc" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" font-weight="700">Offline Eval Harness (no paid APIs)</text>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="12" fill="#e2e8f0">
+    <rect x="150" y="300" width="140" height="50" rx="8" fill="#14532d"/>
+    <text x="220" y="330" text-anchor="middle">Faithfulness</text>
+    <rect x="310" y="300" width="140" height="50" rx="8" fill="#1e3a8a"/>
+    <text x="380" y="330" text-anchor="middle">Context Precision</text>
+    <rect x="470" y="300" width="140" height="50" rx="8" fill="#713f12"/>
+    <text x="540" y="330" text-anchor="middle">Answer Relevance</text>
+    <rect x="630" y="300" width="140" height="50" rx="8" fill="#4a044e"/>
+    <text x="700" y="330" text-anchor="middle">Token F1 vs Gold</text>
+  </g>
+  <text x="460" y="400" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11">Labeled eval set → scripts/evaluate.py → reports/metrics.json · Streamlit live breakdown</text>
+</svg>
