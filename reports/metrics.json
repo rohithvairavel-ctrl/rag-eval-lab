@@ -13,5 +13,26 @@
     "hit_rate": 1.0,
     "n_examples": 20
   },
-  "note": "Per-example breakdown in reports/metrics.md. Regenerate full dump with: python scripts/evaluate.py"
+  "per_example": [
+    {"id": "q01", "question": "What is the bias-variance tradeoff?", "faithfulness": 0.8265, "context_precision": 0.2, "context_recall": 0.5, "context_relevance": 0.2728, "answer_relevance": 0.6381, "answer_token_f1": 0.3111, "hit_rate": 1.0},
+    {"id": "q02", "question": "How does L1 regularization differ from L2?", "faithfulness": 0.9048, "context_precision": 0.2, "context_recall": 1.0, "context_relevance": 0.1533, "answer_relevance": 0.2271, "answer_token_f1": 0.2222, "hit_rate": 1.0},
+    {"id": "q03", "question": "What is k-fold cross-validation and when use stratified folds?", "faithfulness": 0.9357, "context_precision": 0.2, "context_recall": 1.0, "context_relevance": 0.2265, "answer_relevance": 0.5261, "answer_token_f1": 0.4561, "hit_rate": 1.0},
+    {"id": "q04", "question": "Define precision, recall, and F1 score.", "faithfulness": 0.8998, "context_precision": 0.4, "context_recall": 1.0, "context_relevance": 0.2981, "answer_relevance": 0.4225, "answer_token_f1": 0.5294, "hit_rate": 1.0},
+    {"id": "q05", "question": "What does ROC AUC measure?", "faithfulness": 0.8762, "context_precision": 0.2, "context_recall": 1.0, "context_relevance": 0.2199, "answer_relevance": 0.5334, "answer_token_f1": 0.2174, "hit_rate": 1.0},
+    {"id": "q06", "question": "Explain how retrieval-augmented generation works.", "faithfulness": 0.8974, "context_precision": 0.2, "context_recall": 0.5, "context_relevance": 0.1457, "answer_relevance": 0.3833, "answer_token_f1": 0.0851, "hit_rate": 1.0},
+    {"id": "q07", "question": "What is BM25 and why combine it with dense retrieval?", "faithfulness": 0.8467, "context_precision": 0.6, "context_recall": 1.0, "context_relevance": 0.2636, "answer_relevance": 0.3682, "answer_token_f1": 0.3404, "hit_rate": 1.0},
+    {"id": "q08", "question": "Why is document chunking important in RAG systems?", "faithfulness": 0.8265, "context_precision": 0.4, "context_recall": 1.0, "context_relevance": 0.1714, "answer_relevance": 0.4036, "answer_token_f1": 0.0435, "hit_rate": 1.0},
+    {"id": "q09", "question": "How do you handle imbalanced classification datasets?", "faithfulness": 0.9256, "context_precision": 0.4, "context_recall": 1.0, "context_relevance": 0.1103, "answer_relevance": 0.21, "answer_token_f1": 0.1667, "hit_rate": 1.0},
+    {"id": "q10", "question": "What is the difference between bagging and boosting?", "faithfulness": 0.9049, "context_precision": 0.2, "context_recall": 0.5, "context_relevance": 0.1593, "answer_relevance": 0.3065, "answer_token_f1": 0.3137, "hit_rate": 1.0},
+    {"id": "q11", "question": "How does self-attention work in transformers?", "faithfulness": 0.8717, "context_precision": 0.4, "context_recall": 1.0, "context_relevance": 0.1433, "answer_relevance": 0.3664, "answer_token_f1": 0.5532, "hit_rate": 1.0},
+    {"id": "q12", "question": "What metrics are used to evaluate RAG systems?", "faithfulness": 0.9, "context_precision": 0.4, "context_recall": 0.6667, "context_relevance": 0.2419, "answer_relevance": 0.3373, "answer_token_f1": 0.4, "hit_rate": 1.0},
+    {"id": "q13", "question": "What is data leakage in machine learning?", "faithfulness": 0.8857, "context_precision": 0.2, "context_recall": 0.5, "context_relevance": 0.1989, "answer_relevance": 0.304, "answer_token_f1": 0.0851, "hit_rate": 1.0},
+    {"id": "q14", "question": "Explain cosine similarity for text retrieval.", "faithfulness": 0.8698, "context_precision": 0.6, "context_recall": 1.0, "context_relevance": 0.2703, "answer_relevance": 0.5024, "answer_token_f1": 0.5106, "hit_rate": 1.0},
+    {"id": "q15", "question": "What is probability calibration?", "faithfulness": 0.8316, "context_precision": 0.2, "context_recall": 1.0, "context_relevance": 0.3271, "answer_relevance": 0.5557, "answer_token_f1": 0.093, "hit_rate": 1.0},
+    {"id": "q16", "question": "How does A/B testing estimate causal lift?", "faithfulness": 0.8982, "context_precision": 0.4, "context_recall": 1.0, "context_relevance": 0.1738, "answer_relevance": 0.4937, "answer_token_f1": 0.2917, "hit_rate": 1.0},
+    {"id": "q17", "question": "What is a feature store and why use one?", "faithfulness": 0.9165, "context_precision": 0.2, "context_recall": 0.5, "context_relevance": 0.2052, "answer_relevance": 0.2805, "answer_token_f1": 0.449, "hit_rate": 1.0},
+    {"id": "q18", "question": "Why prefer PR-AUC when positives are rare?", "faithfulness": 0.9288, "context_precision": 0.6, "context_recall": 1.0, "context_relevance": 0.2139, "answer_relevance": 0.5172, "answer_token_f1": 0.3404, "hit_rate": 1.0},
+    {"id": "q19", "question": "What causes vanishing gradients and how to mitigate them?", "faithfulness": 0.9573, "context_precision": 0.4, "context_recall": 0.6667, "context_relevance": 0.1245, "answer_relevance": 0.3322, "answer_token_f1": 0.3667, "hit_rate": 1.0},
+    {"id": "q20", "question": "How does reciprocal rank fusion help hybrid retrieval?", "faithfulness": 0.9408, "context_precision": 0.4, "context_recall": 0.6667, "context_relevance": 0.2149, "answer_relevance": 0.4791, "answer_token_f1": 0.3774, "hit_rate": 1.0}
+  ]
 }
